@@ -1,7 +1,7 @@
 //camelCase
 
 let listaDeNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 50;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -16,10 +16,10 @@ function exibirTextoNaTela(tag, texto){                                     // F
     campo.innerHTML = texto;
     responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
-    
+
 function mensagemInicial(){
     exibirTextoNaTela('h1', 'Jodo do Numero Secreto');
-    exibirTextoNaTela('p', 'Escolha um Numero Entre 1 e 100');
+    exibirTextoNaTela('p', 'Escolha um Numero Entre 1 e 50');
 }
 
 mensagemInicial();
